@@ -23,11 +23,10 @@ class App extends Component {
 
   }
   removeAnime = (anime) => {
-    const carts = [...this.state.carts]
-    console.log('is anime clicked');
-    const indexAnime = carts.indexOf(anime);
-    carts.splice(indexAnime, 1);
-    this.setState({carts});
+    const carts = [...this.state.carts] //copy of the orginial array
+    const indexAnime = carts.indexOf(anime); //get the index
+    carts.splice(indexAnime, 1); // remove the item
+    this.setState({carts}); //assign it to the original array
   }
 
   componentDidMount() {
