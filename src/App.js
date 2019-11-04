@@ -22,6 +22,13 @@ class App extends Component {
     })
 
   }
+  removeAnime = (anime) => {
+    const carts = [...this.state.carts]
+    console.log('is anime clicked');
+    const indexAnime = carts.indexOf(anime);
+    carts.splice(indexAnime, 1);
+    this.setState({carts});
+  }
 
   componentDidMount() {
     Axios.get('https://api.jikan.moe/v3/top/anime')
@@ -44,10 +51,10 @@ class App extends Component {
         </>
         <>
           <Switch>
-            <Route exact path='/' component={() => <AnimeList topAnimes={this.state.animes} addNewAnime={this.addNewAnime}/>} />
+            <Route exact path='/' component={() => <AnimeList topAnimes={this.state.animes} addNewAnime={this.addNewAnime}/>} removeAnime={this.removeAnime}/>
             {/* in order to send data from App to another link Using the route.. we pass it using function. the next line will do it*/}
             <Route path='/animeinfor' component={() => <AnimeInfo />} />
-            <Route path='/CartPage' component={() => <CartPage  carts={this.state.carts}/>} />
+            <Route path='/CartPage' component={() => <CartPage  removeAnime={this.removeAnime} carts={this.state.carts}/>} />
             <Route component={Error} />
           </Switch>
         </>

@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 export default class AnimeShelf extends Component {
     handleClick = (e) => {
         e.preventDefault();
-        this.props.addNewAnime(this.props.anime)
+        this.props.addNewAnime(this.props.anime);
+    }
+    handleRemoveAnime =(e) => {
+        e.preventDefault();
+        this.props.removeAnime(this.props.anime);
     }
     render() {
         return (
@@ -12,6 +16,7 @@ export default class AnimeShelf extends Component {
                 <h1>{this.props.anime.title}</h1>
             </div>
             <button onClick={this.handleClick} >add new carts</button>
+            
         </div>
         )
     }
