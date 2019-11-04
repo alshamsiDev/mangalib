@@ -16,9 +16,8 @@ class App extends Component {
   }
 
   addNewAnime = (anime) => {
-    console.log('is anime clicked');
     this.setState({
-      carts : [ ...this.state.carts, anime]
+      carts : [ ...this.state.carts, anime] //edit the orginial list and add new item to the original list
     })
 
   }
@@ -28,13 +27,18 @@ class App extends Component {
     carts.splice(indexAnime, 1); // remove the item
     this.setState({carts}); //assign it to the original array
   }
+  clearAllAnime = () => {
+    this.setState({
+      carts : []
+    })
+  }
 
   componentDidMount() {
     Axios.get('https://api.jikan.moe/v3/top/anime')
       .then((result) => {
-        const animeData = result.data.top;
+        const animeData = result.data.top; // assign the data from API to the animeDate variable
         this.setState({
-          animes: animeData
+          animes: animeData //add these list to the animes props
         });
       }).catch((err) => {
         console.error('thi is error', err);
@@ -53,7 +57,7 @@ class App extends Component {
             <Route exact path='/' component={() => <AnimeList topAnimes={this.state.animes} addNewAnime={this.addNewAnime}/>} removeAnime={this.removeAnime}/>
             {/* in order to send data from App to another link Using the route.. we pass it using function. the next line will do it*/}
             <Route path='/animeinfor' component={() => <AnimeInfo />} />
-            <Route path='/CartPage' component={() => <CartPage  removeAnime={this.removeAnime} carts={this.state.carts}/>} />
+            <Route path='/CartPage' component={() => <CartPage  removeAnime={this.removeAnime} carts={this.state.carts} clearAllAnime={this.clearAllAnime}/>} />
             <Route component={Error} />
           </Switch>
         </>
