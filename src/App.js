@@ -18,7 +18,7 @@ class App extends Component {
   addNewAnime = (anime) => {
     console.log('is anime clicked');
     this.setState({
-      carts : [anime, ...this.state.carts]
+      carts : [ ...this.state.carts, anime]
     })
 
   }
