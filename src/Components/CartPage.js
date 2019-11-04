@@ -1,18 +1,19 @@
 import React from 'react'
 
 const CartPage = (props) => {
-    const allCart = props.carts.map((item, index) => {
+    const allCart = props.carts.map((anime, index) => {
         return (
             <>
-            <li key={index} onClick={() => props.removeAnime(item)}>{item.title}</li>
-            <h1>jk</h1>
+                <img src={anime.image_url} alt={anime.title} />
+                <h1>{anime.title}</h1>
+                <button onClick={()=> props.removeAnime(anime)}>Remove item</button>
             </>
         )
-            
     });
     return (
         <div>
             {allCart}
+            <button onClick={() => props.clearAllAnime()} >Delete all </button>
         </div>
     )
 }
