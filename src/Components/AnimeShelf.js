@@ -15,7 +15,7 @@ export default class AnimeShelf extends Component {
                 <div>
                     <h1>{this.props.anime.title}</h1>
                 </div>
-                <button onClick={this.handleClick} >add new carts</button>
+                <button onClick={this.handleClick} >Quick add to carts</button>
             </div>
         )
     }
