@@ -17,9 +17,8 @@ class App extends Component {
 
   addNewAnime = (anime) => {
     this.setState({
-      carts : [ ...this.state.carts, anime] //edit the orginial list and add new item to the original list
+      carts : [anime, ...this.state.carts] //edit the orginial list and add new item to the original list
     })
-
   }
   removeAnime = (anime) => {
     const carts = [...this.state.carts] //copy of the orginial array
