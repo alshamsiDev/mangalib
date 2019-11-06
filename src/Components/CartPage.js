@@ -3,7 +3,7 @@ import React from 'react'
 const CartPage = (props) => {
     const allCart = props.carts.map((anime, index) => {
         return (
-            <div>
+            <div key={index}>
                 <img src={anime.image_url} alt={anime.title} />
                 <h1>{anime.title}</h1>
                 <button onClick={() => props.removeAnime(anime)}>Remove item</button>
