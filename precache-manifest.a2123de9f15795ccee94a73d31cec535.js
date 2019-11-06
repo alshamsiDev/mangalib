@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6398247b9562e0e6078ab1a78f24fd9a",
+    "revision": "1dc3461efc7cb5dca4a362a5103215fa",
     "url": "/mangalib/index.html"
   },
   {
-    "revision": "04bb9d6cf2ffb78253d0",
+    "revision": "3b0c7af0f0475823aa9e",
     "url": "/mangalib/static/css/main.721eac68.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mangalib/static/js/2.62b15246.chunk.js"
   },
   {
-    "revision": "04bb9d6cf2ffb78253d0",
-    "url": "/mangalib/static/js/main.ac73563c.chunk.js"
+    "revision": "3b0c7af0f0475823aa9e",
+    "url": "/mangalib/static/js/main.23473d2d.chunk.js"
   },
   {
     "revision": "d7b2c783a0bad14eba4b",
