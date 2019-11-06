@@ -53,7 +53,7 @@ class App extends Component {
         </div>
         <div>
           <Switch>
-            <Route exact path='/' component={() => <AnimeList counter={this.state.carts} topAnimes={this.state.animes} addNewAnime={this.addNewAnime}/>} removeAnime={this.removeAnime}/>
+            <Route exact path='/mangalib' component={() => <AnimeList counter={this.state.carts} topAnimes={this.state.animes} addNewAnime={this.addNewAnime}/>} removeAnime={this.removeAnime}/>
             {/* in order to send data from App to another link Using the route.. we pass it using function. the next line will do it*/}
             <Route path='/animeinfor' component={() => <AnimeInfo />} />
             <Route path='/CartPage' component={() => <CartPage  removeAnime={this.removeAnime} carts={this.state.carts} clearAllAnime={this.clearAllAnime}/>} />
