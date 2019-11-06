@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -39,7 +42,9 @@
 
 .wrapper .card {
     flex-grow: 1;
-    width: 31%;
-    margin-bottom: 30px;
-    margin-right: 30px;
+    width: 33%;
+    padding: 0 auto;
+    margin: 12px;
+    /* margin-bottom: 30px;
+    margin-right: 30px; */
 }
