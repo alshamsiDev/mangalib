@@ -48,10 +48,10 @@ class App extends Component {
     console.log(this.state.carts);
     return (
       <Router>
-        <>
+        <div>
           <Navs />
-        </>
-        <>
+        </div>
+        <div>
           <Switch>
             <Route exact path='/' component={() => <AnimeList counter={this.state.carts} topAnimes={this.state.animes} addNewAnime={this.addNewAnime}/>} removeAnime={this.removeAnime}/>
             {/* in order to send data from App to another link Using the route.. we pass it using function. the next line will do it*/}
@@ -59,7 +59,7 @@ class App extends Component {
             <Route path='/CartPage' component={() => <CartPage  removeAnime={this.removeAnime} carts={this.state.carts} clearAllAnime={this.clearAllAnime}/>} />
             <Route component={Error} />
           </Switch>
-        </>
+        </div>
       </Router>
 
     )
