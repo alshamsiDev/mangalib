@@ -42,6 +42,9 @@ export default class AnimeShelf extends Component {
                             <a className="btn btn-primary" onClick={this.handleClick} >add to cart</a>
                             <a className="btn btn-primary" onClick={() => this.showDetails(this.props.anime)}>more details</a>
                         </div>
+                        <h4>{counter.length === 0 ? "" : counter.length}</h4>
+                        
+                        {this.state.details}
                     </div>
 
             // <div className="card" style={{maxWidth: '500px'}}>
