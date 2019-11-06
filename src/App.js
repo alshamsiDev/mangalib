@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import Axios from 'axios'
 import AnimeList from './Components/AnimeList'
 import AnimeInfo from './Components/animeInfo'
-import Navbar from './Components/Navbar';
+import Navs from './Components/Navs';
 import CartPage from './Components/CartPage'
 import Error from './Components/Error'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import './App.css'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -48,7 +49,7 @@ class App extends Component {
     return (
       <Router>
         <>
-          <Navbar />
+          <Navs />
         </>
         <>
           <Switch>

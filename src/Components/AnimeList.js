@@ -6,7 +6,7 @@ export default class AnimeList extends Component {
             return <AnimeShelf anime={anime} key={index} addNewAnime={this.props.addNewAnime} counter={this.props.counter}/>
         })
         return (
-            <div>
+            <div className="wrapper">
                 {allAnimes}
             </div>
         )
