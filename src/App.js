@@ -47,7 +47,7 @@ class App extends Component {
   render() {
     console.log(this.state.carts);
     return (
-      <HashRouter basename="/">
+      <HashRouter basename="/mangalib">
         <div>
           <Navs />
         </div>
