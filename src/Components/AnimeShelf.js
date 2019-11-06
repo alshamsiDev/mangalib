@@ -34,7 +34,7 @@ export default class AnimeShelf extends Component {
             return item.title === this.props.anime.title;
         })
         return (
-                <div className="card" style={{ width: '30%' }}>
+                <div className="card" style={{ width: '25%' }}>
                         <div className="card-body">
                         <img src={this.props.anime.image_url} className="card-img-top" alt={this.props.anime.title}/>
                             <h5 className="card-title">{this.props.anime.title}</h5>

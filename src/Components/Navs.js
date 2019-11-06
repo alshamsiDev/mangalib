@@ -6,7 +6,6 @@ const Navs = () => {
             <Link className="navbar-brand text-white" to="/">Home</Link>
             <Link className="navbar-brand text-white" to="/CartPage">myCart </Link>
             <Link className="navbar-brand text-white" to="/search">Search</Link>
-
         </nav>
         // <>
 
