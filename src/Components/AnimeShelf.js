@@ -34,39 +34,19 @@ export default class AnimeShelf extends Component {
             return item.title === this.props.anime.title;
         })
         return (
-                <div className="card" style={{ width: '25%' }}>
-                        <div className="card-body">
-                        <img src={this.props.anime.image_url} className="card-img-top" alt={this.props.anime.title}/>
-                            <h5 className="card-title">{this.props.anime.title}</h5>
-                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a className="btn btn-primary" onClick={this.handleClick} >add to cart</a>
-                            <a className="btn btn-primary" onClick={() => this.showDetails(this.props.anime)}>more details</a>
-                        </div>
-                        <h4>{counter.length === 0 ? "" : counter.length}</h4>
-                        
-                        {this.state.details}
-                    </div>
-
-            // <div className="card" style={{maxWidth: '500px'}}>
-            //     <img src={this.props.anime.image_url} className="card-img-top" alt="fhd"/>
-            //         <div class="card-body">
-            //             <h5 className="card-title">{this.props.anime.title}</h5>
-            //             {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-            //             <a className="btn btn-primary">quick add to cart</a>
-
-            //             <a className="btn btn-primary">Show more details</a>
-            //         </div>
-            //         {/* <div>
-            //         <img src={this.props.anime.image_url} alt={this.props.anime.title} />
-            //         <span>{counter.length}</span>
-            //         <div>
-            //             <h1>{this.props.anime.title}</h1>
-            //         </div>
-            //         <button onClick={this.handleClick}>Quick add to scarts</button>
-            //         <button onClick={() => this.showDetails(this.props.anime)}>More details</button>
-            //         {this.state.details}
-            //     </div> */}
-            // </div>
+            <div className="card text-white bg-secondary border-info rounded " style={{ width: '18rem' }}>
+                <div className="card-body">
+                    <img src={this.props.anime.image_url} className="card-img-top rounded" alt={this.props.anime.title} />
+                    <h5 className="card-title">{this.props.anime.title}</h5>
+                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <button type="button" className="btn btn-warning" onClick={this.handleClick} >add to cart <span className="badge badge-info">{counter.length === 0 ? "" : counter.length}</span>
+                    </button>
+                    <button className="btn btn-info" onClick={() => this.showDetails(this.props.anime)}>more details</button>
+                </div>
+                <h4></h4>
+            
+                {this.state.details}
+            </div>
         )
     }
 }
