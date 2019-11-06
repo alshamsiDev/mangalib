@@ -5,7 +5,7 @@ import AnimeInfo from './Components/animeInfo'
 import Navs from './Components/Navs';
 import CartPage from './Components/CartPage'
 import Error from './Components/Error'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Route, Link, Switch } from 'react-router-dom';
 import './App.css'
 class App extends Component {
   constructor(props) {
@@ -47,7 +47,7 @@ class App extends Component {
   render() {
     console.log(this.state.carts);
     return (
-      <Router>
+      <HashRouter basename="/">
         <div>
           <Navs />
         </div>
@@ -60,7 +60,7 @@ class App extends Component {
             <Route component={Error} />
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
 
     )
   }
