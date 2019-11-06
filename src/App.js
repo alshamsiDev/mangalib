@@ -31,7 +31,6 @@ class App extends Component {
       carts : []
     })
   }
-
   componentDidMount() {
     Axios.get('https://api.jikan.moe/v3/top/anime')
       .then((result) => {
