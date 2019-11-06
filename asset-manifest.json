@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mangalib/static/css/main.721eac68.chunk.css",
-    "main.js": "/mangalib/static/js/main.bfb92f93.chunk.js",
-    "main.js.map": "/mangalib/static/js/main.bfb92f93.chunk.js.map",
+    "main.js": "/mangalib/static/js/main.52575b30.chunk.js",
+    "main.js.map": "/mangalib/static/js/main.52575b30.chunk.js.map",
     "runtime-main.js": "/mangalib/static/js/runtime-main.9f84db86.js",
     "runtime-main.js.map": "/mangalib/static/js/runtime-main.9f84db86.js.map",
     "static/js/2.62b15246.chunk.js": "/mangalib/static/js/2.62b15246.chunk.js",
     "static/js/2.62b15246.chunk.js.map": "/mangalib/static/js/2.62b15246.chunk.js.map",
     "index.html": "/mangalib/index.html",
-    "precache-manifest.9ea33c40d0d9b3143ad0bb2be4c93817.js": "/mangalib/precache-manifest.9ea33c40d0d9b3143ad0bb2be4c93817.js",
+    "precache-manifest.c4c54cc47b9699aafabb7aa64ffccc13.js": "/mangalib/precache-manifest.c4c54cc47b9699aafabb7aa64ffccc13.js",
     "service-worker.js": "/mangalib/service-worker.js",
     "static/css/main.721eac68.chunk.css.map": "/mangalib/static/css/main.721eac68.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.9f84db86.js",
     "static/js/2.62b15246.chunk.js",
     "static/css/main.721eac68.chunk.css",
-    "static/js/main.bfb92f93.chunk.js"
+    "static/js/main.52575b30.chunk.js"
   ]
 }
