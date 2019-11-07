@@ -23,7 +23,9 @@ const CartPage = (props) => {
                 </div>
                 
             </div>
-            <button className="btn btn-warning" onClick={() => props.removeAnime(anime)}>Remove item</button>
+            <button className="btn btn-warning" onClick={() => props.removeAnime(anime)}>Remove item <i className="material-icons">
+clear
+</i></button>
         </div>
         )
     });

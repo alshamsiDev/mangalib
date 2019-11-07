@@ -38,13 +38,13 @@ export default class AnimeShelf extends Component {
                 <div className="card-body">
                     <img src={this.props.anime.image_url} className="card-img-top rounded" alt={this.props.anime.title} />
                     <h5 className="card-title">{this.props.anime.title}</h5>
-                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <button type="button" className="btn btn-warning" onClick={this.handleClick} >add to cart <span className="badge badge-info">{counter.length === 0 ? "" : counter.length}</span>
+                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis exercitationem cum eligendi voluptatum harum fugit perspiciatis deserunt doloribus deleniti labore perferendis et fugiat, laboriosam reiciendis dolor aut! Illo, aliquid beatae!</p>
+                    <button type="button" className="btn btn-warning" style={{ marginRight: '10px' }} onClick={this.handleClick} > <li className="material-icons">add_shopping_cart </li><span className="badge badge-info">{counter.length === 0 ? "" : counter.length}</span>
                     </button>
-                    <button className="btn btn-info" onClick={() => this.showDetails(this.props.anime)}>more details</button>
+                    <button className="btn btn-info" onClick={() => this.showDetails(this.props.anime)}><i className="material-icons">more_horiz</i></button>
                 </div>
                 <h4></h4>
-            
+
                 {this.state.details}
             </div>
         )
