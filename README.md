@@ -4,6 +4,7 @@
 - Description
 - Structure
 - Tools & Techneiqes 
+- User story
 - Project status
 - Future plan
 - Conclusion
@@ -30,6 +31,14 @@ In the begaining, I sktched out the project on a piece of paper to orginize my t
 - Routers library
 - Bootstrap framwork
 - Material Icons
+
+----------------------------------------------------------------
+
+### User story:
+- As a user, I can add book to my list
+- As a user, I can remove book from my list
+- As a user, I can read more about each anime
+- As a user, I can open a website on any other screen
 
 ----------------------------------------------------------------
 
