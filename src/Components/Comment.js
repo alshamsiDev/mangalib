@@ -6,10 +6,7 @@ const Comment = (props) => {
     const handleChange = (e) => {
         // console.log(inputValue);
         setInputValue(e.target.value);
-    }
-    const handleClick = (e) => {
-        // console.log(inputValue);
-        setComment(inputValue);
+
     }
     const handleToggle = () => {
         console.log("hide or show");
@@ -20,7 +17,7 @@ const Comment = (props) => {
 <div className="form-group">
     <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="add comment" onChange={handleChange}></textarea>
-    <button type="button" className="btn btn-secondary btn-lg" onClick={handleClick}>add</button>
+    <button type="button" className="btn btn-secondary btn-lg" onClick={() => setComment(comment + inputValue)}>add</button>
 </div>
 <div className="hide">
     <p>{comment}</p>

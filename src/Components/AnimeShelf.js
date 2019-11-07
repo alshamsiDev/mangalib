@@ -3,15 +3,11 @@ export default class AnimeShelf extends Component {
     constructor(props) {
         super(props);
         this.state = ({
-            count: 0,
             details: null
         })
     }
     handleClick = (e) => {
         e.preventDefault();
-        this.setState(prevState => {
-            count: prevState.count++
-        });
         // count = count++;
         this.props.addNewAnime(this.props.anime);
     }
@@ -22,12 +18,13 @@ export default class AnimeShelf extends Component {
     showDetails = (anime) => {
         this.setState({
             details: <div>
-                <h1>{anime.title}</h1>
-                <h2>{anime.episodes}</h2>
+                <h3>Type : {anime.type}</h3>
+                <h3>Episode : {anime.episodes}</h3>
+                <h3>Release date : {anime.start_date}</h3>
+                <h3>Final episode date : {anime.end_date}</h3>
+                <h3>Score : {anime.score}</h3>
             </div>
         })
-
-
     }
     render() {
         const counter = this.props.counter.filter(item => {
@@ -43,7 +40,7 @@ export default class AnimeShelf extends Component {
                     </button>
                     <button className="btn btn-info" onClick={() => this.showDetails(this.props.anime)}><i className="material-icons">more_horiz</i></button>
                 </div>
-                <h4></h4>
+                
 
                 {this.state.details}
             </div>

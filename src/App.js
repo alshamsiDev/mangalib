@@ -6,7 +6,7 @@ import Navs from './Components/Navs';
 import CartPage from './Components/CartPage'
 import Comment from './Components/Comment'
 import Error from './Components/Error'
-import { BrowserRouter as HashRouter, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Route,  Switch } from 'react-router-dom';
 import './App.css'
 class App extends Component {
   constructor(props) {
@@ -58,7 +58,7 @@ class App extends Component {
             {/* in order to send data from App to another link Using the route.. we pass it using function. the next line will do it*/}
             <Route path='/animeinfor' component={() => <AnimeInfo />} />
             <Route path='/CartPage' component={() => <CartPage  removeAnime={this.removeAnime} carts={this.state.carts} clearAllAnime={this.clearAllAnime}/>} />
-            <Route path='/Comments' component={()=> <Comment/>}/>
+            <Route path='/Comments' render={(props)=> (<Comment {...this.props}/>)}/>
             <Route component={Error} />
           </Switch>
         </div>

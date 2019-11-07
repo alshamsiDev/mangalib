@@ -15,10 +15,10 @@ const Navs = () => {
                     {/* <Link className="nav-link" to="/">Home <span className="material-icons md-36">menu_book</span></Link> */}
                     {/* </li> */}
                     <li className="nav-item">
-                        <Link className="nav-link" to="/CartPage">Cart<li className="material-icons md-36">shopping_cart</li></Link>
+                        <Link className="nav-link" to="/CartPage">Cart <span className="material-icons md-36">shopping_cart</span> </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Comments"><i class="material-icons">feedback</i> feedback </Link>
+                        <Link className="nav-link" to="/Comments"><span className="material-icons">feedback</span> feedback </Link>
                     </li>
                 </ul>
             </div>
