@@ -43,7 +43,7 @@ In the begaining, I sktched out the project on a piece of paper to orginize my t
 ----------------------------------------------------------------
 
 ### Project status:
-In this stage, the application is able to show list of manga books that the user can click a dedicated btns for adding to carts or show more to read more. In addiion, ability to edit the cart list. and finally, there is a feedback page to give me some feedback so I can imorove my website ^_*
+In this stage, the application is able to show list of manga books that the user can click a dedicated btns for adding to carts or show more to read more. In addiion, ability to edit the cart list. and finally, there is a feedback page to give me some feedback so I can imorove my website ^_
 ----------------------------------------------------------------
 
 ### Future plan:
